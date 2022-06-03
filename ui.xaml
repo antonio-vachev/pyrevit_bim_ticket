@@ -1,0 +1,174 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FontFamily="Arial"
+        SizeToContent="Height"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="IPA BIM Tickets" Width="465">
+    <StackPanel Margin="40">
+        <Label Content="Create Request" FontSize="20" Padding="-5"></Label>
+        <TextBlock TextWrapping="WrapWithOverflow" Margin="0 15">The request you are making will reach the IPA BIM team. The support members will get back to you as soon as possible
+        </TextBlock>
+        <Separator Margin="0 10 5 25"/>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="0 0 0 0"
+               Content="* Urgency" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+            <Label Margin="165 0 0 5"
+               Content="* Assign to" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox 
+            x:Name="urgency_combobox"            
+            Text="Select" 
+            Padding="10"
+            IsEditable="True" 
+            MinHeight="30"
+            MinWidth="150"
+            Margin="0 0 250 20" 
+            FontWeight="Light" BorderThickness="5,1,1,1">
+            </ComboBox>
+            <ComboBox 
+            x:Name="assign_combobox"            
+            Text="Select" 
+            Padding="10"
+            IsEditable="True" 
+            MinHeight="30"
+                MinWidth="150"
+            Margin="-180 0 250 20" 
+            FontWeight="Light" BorderThickness="5,1,1,1">
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="0 0 0 0"
+               Content="* Project" 
+               Padding="-5" 
+               FontWeight="Bold" Width="55">
+            </Label>
+            <Label Margin="165 0 0 0"
+               Content="* Phase" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBox 
+                 Margin="0 5 30 20"
+                 MinWidth="150"
+                 Text="22022"
+                 TextWrapping="WrapWithOverflow"
+                 Padding="10"
+                 FontWeight="Light"
+                 x:Name="project_textbox">
+
+            </TextBox>
+            <ComboBox 
+            x:Name="phase_combobox"            
+            Text="Select" 
+            Padding="10"
+            IsEditable="True" 
+            MinHeight="30"
+            MinWidth="150"
+            Margin="40 5 250 20" 
+            FontWeight="Light" BorderThickness="5,1,1,1">
+            </ComboBox>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 0 0 0">
+            <Label Margin="0 0 0 0"
+               Content="* Consultant" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+            <Label Margin="150 0 0 0"
+               Content="* Request type" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox 
+            x:Name="consultant_combobox"            
+            Text="Select" 
+            Padding="10"
+            IsEditable="True" 
+            MinHeight="30"
+            MinWidth="150"
+            Margin="0 5 250 20" 
+            FontWeight="Light" BorderThickness="5,1,1,1">
+            </ComboBox>
+            <ComboBox 
+            x:Name="request_type_combobox"            
+            Text="Select" 
+            Padding="10"
+            IsEditable="True" 
+            MinHeight="30"
+            MinWidth="150"
+            Margin="-180 5 250 20" 
+            FontWeight="Light" BorderThickness="5,1,1,1">
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 0 0 0">
+            <Label Margin="0 0 0 0"
+               Content="* Attachment" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+            <Label Margin="148 0 0 0"
+               Content="* Revit version" 
+               Padding="-5" 
+               FontWeight="Bold">
+            </Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBox 
+                 Margin="0 5 30 20"
+                 MinWidth="150"
+                 MaxWidth="150"
+                 MinHeight="30"
+                 MaxHeight="40"
+                 Text="Add URL of your image"
+                 TextWrapping="NoWrap"
+                 Padding="10"
+                 FontWeight="Light"
+                 x:Name="attachment_textbox">
+
+            </TextBox>
+            <ComboBox 
+            x:Name="version_combobox"            
+            Text="Select" 
+            Padding="10"
+            IsEditable="True" 
+            MinHeight="30"
+            MinWidth="150"
+            Margin="40 5 250 20" 
+            FontWeight="Light" BorderThickness="5,1,1,1">
+            </ComboBox>
+
+        </StackPanel>
+        <Label Content="* Request Description" 
+               Padding="-5" Margin="0 20 0 10" 
+               FontWeight="Bold">
+
+        </Label>
+        <TextBox TextWrapping="WrapWithOverflow"
+                 Margin="0 0 0 0"
+                 MinHeight="120"
+                 Padding="10"
+                 FontWeight="Light"
+                 x:Name="request_textbox"
+                 >
+
+        </TextBox>
+        <Button Width="115" Height="25" Margin="0 30 0 0" Click="submit">
+            Submit
+        </Button>
+    </StackPanel>
+</Window>
+
+   
