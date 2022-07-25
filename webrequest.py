@@ -9,9 +9,9 @@ from System.Net import WebClient, HttpRequestHeader
 
 client = WebClient()
 
-AIRTABLE_BASE_ID = "appX1ltGTSz0dt7dA"
-AIRTABLE_TABLE_NAME = "revit-table"
-AIRTABLE_API_KEY = "keyzPCqxCOmHI76Ew"
+AIRTABLE_BASE_ID = "YOUR BASE ID HERE"
+AIRTABLE_TABLE_NAME = "YOUR TABLE NAME HERE"
+AIRTABLE_API_KEY = "YOUR API KEY HERE"
 url = "https://api.airtable.com/v0/{}/{}/".format(AIRTABLE_BASE_ID, AIRTABLE_TABLE_NAME)
 
 
