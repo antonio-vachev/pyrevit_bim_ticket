@@ -1,5 +1,8 @@
 # pyrevit-bim-ticket
-PyRevit extension to register Revit user's BIM requests.
+PyRevit extension to register Revit user's BIM requests. 
+<br><br>
+The form is connected to a web-based database (Airtable). All requests are collected and are used to analyse common issues, most problematic projects, identify specific areas with lack of expertise and other insights that are relevant to the business. 
+<br><br>
 The request contains information regarding:
 - How **urgent** is the issue?
 - Who is it **assigned** to?
