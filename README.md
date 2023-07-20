@@ -1,5 +1,5 @@
 # pyrevit-bim-ticket
-PyRevit extension to register Revit user's BIM requests. Based on [Deyan Nenov's](https://github.com/dnenov?tab=repositories) [tutorial](https://www.youtube.com/watch?v=8wW_h9jD1Yc).
+PyRevit extension to register Revit user's BIM requests.
 The request contains information regarding:
 - How **urgent** is the issue?
 - Who is it **assigned** to?
